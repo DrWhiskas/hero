@@ -1,17 +1,13 @@
 "use client"
 
 interface HeroProps {
-  title?: string
-  description?: string
+ 
   content?: React.ReactNode
   backgroundImage?: string
   backgroundColor?: string
-  textSize?: string
-  textColor?: string
-
 }
 
-const Hero: React.FC<HeroProps> = ({ title, description, content, backgroundColor, backgroundImage, textSize, textColor }) => {
+const Hero: React.FC<HeroProps> = ({ content, backgroundColor, backgroundImage,}) => {
   return (
 		<section
 			className={`w-screen h-screen relative ${backgroundColor}`}
